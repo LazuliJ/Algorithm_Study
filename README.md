@@ -1,4 +1,4 @@
-# Algorithm_Study💻
+# Algorithm_Study
 - Algorithm Study Repository (SSAFY, 2024/08 - )
 - Language: C++
 - Using: BAEKJOON
