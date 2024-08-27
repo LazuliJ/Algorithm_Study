@@ -2,13 +2,13 @@
 #include <vector>
 
 using namespace std;
-int N; // ÀÌ´× ¼ö
-int MAP[50][9]; // ÁÖ¾îÁø Á¡¼öµé
-int chMAP[50][9]; // ÀÚ¸®¸¦ ¹Ù²Û ÈÄ
-int cur_num = 0; // ÇöÀç Å¸ÀÚ
-int ans = 0;// ÃÖÁ¾ Á¤´ä
+int N; // ì´ë‹ ìˆ˜
+int MAP[50][9]; // ì£¼ì–´ì§„ ì ìˆ˜ë“¤
+int chMAP[50][9]; // ìžë¦¬ë¥¼ ë°”ê¾¼ í›„
+int cur_num = 0; // í˜„ìž¬ íƒ€ìž
+int ans = 0;// ìµœì¢… ì •ë‹µ
 
-// ÀÔ·Â
+// ìž…ë ¥
 void input() {
 	cin >> N;
 	for (int i = 0; i < N; i++) {
@@ -18,7 +18,7 @@ void input() {
 	}
 }
 
-// ÇØ´ç ÀÚ¸®¿¡ Áý¾î³Ö±â
+// í•´ë‹¹ ìžë¦¬ì— ì§‘ì–´ë„£ê¸°
 void take_seat(int a, int b) {
 	for (int i = 0; i < N; i++) {
 		chMAP[i][b] = MAP[i][a];
@@ -27,7 +27,7 @@ void take_seat(int a, int b) {
 
 int used_number[9] = { -1, -1, -1, 0, -1, -1, -1, -1, -1 };
 
-// ÀÌ´× nÀÇ Á¡¼ö ±¸ÇÏ±â
+// ì´ë‹ nì˜ ì ìˆ˜ êµ¬í•˜ê¸°
 int cal_scores(int n) {
 	int fouls = 0, score = 0;
 	vector<int> q;
