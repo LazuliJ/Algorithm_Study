@@ -1,6 +1,8 @@
 #include<iostream>
 #include<queue>
 
+// BFS 이용하는 문제
+
 using namespace std;
 
 int H, W;
