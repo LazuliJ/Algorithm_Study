@@ -4,7 +4,7 @@
 using namespace std;
 
 // 백준 1342번 행운의 문자열
-// DFS -> BFS 사용하면 더 빠르게 풀이 가능
+// DFS
 
 string S;
 int ans = 0;
